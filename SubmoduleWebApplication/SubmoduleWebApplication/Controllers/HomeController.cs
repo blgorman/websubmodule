@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using CommonClassLibrary;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SubmoduleWebApplication.Models;
@@ -16,6 +17,7 @@ namespace SubmoduleWebApplication.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            var demoStuff = new Class1();
         }
 
         public IActionResult Index()
